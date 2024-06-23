@@ -14,9 +14,9 @@ function createOTP(){
     copyButton.addEventListener('click', function() {
         const text = otpBox.value;
         navigator.clipboard.writeText(text).then(function() {
-            alert('Text copied to clipboard successfully!');
+            console.log('Text copied to clipboard successfully!');
         }).catch(function(error) {
-            alert('Error copying text to clipboard: ', error);
+            console.error('Error copying text to clipboard: ', error);
         });
     });
 
